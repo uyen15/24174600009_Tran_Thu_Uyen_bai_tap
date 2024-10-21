@@ -411,3 +411,79 @@ nothing to commit, working tree clean
 Meo Meo@DESKTOP-FTLG1B6 MINGW64 /d/24174600009_Tran_Thu_Uyen_bai_tap (main)
 $ git push origin
 Everything up-to-date
+
+Meo Meo@DESKTOP-FTLG1B6 MINGW64 /d/24174600009_Tran_Thu_Uyen_bai_tap (main)
+$ ls
+README.md  caulenh.txt.txt  new_folder/  text_branch1.txt  text_branch2.txt  text_branch3.txt  text_branch4.txt  text_branch_1.txt
+
+Meo Meo@DESKTOP-FTLG1B6 MINGW64 /d/24174600009_Tran_Thu_Uyen_bai_tap (main)
+$ git push origin --list
+error: unknown option `list'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+Meo Meo@DESKTOP-FTLG1B6 MINGW64 /d/24174600009_Tran_Thu_Uyen_bai_tap (main)
+$ echo " " >caulenh.txt
+
+Meo Meo@DESKTOP-FTLG1B6 MINGW64 /d/24174600009_Tran_Thu_Uyen_bai_tap (main)
+$ git add .
+warning: in the working copy of 'caulenh.txt', LF will be replaced by CRLF the next time Git touches it
+
+Meo Meo@DESKTOP-FTLG1B6 MINGW64 /d/24174600009_Tran_Thu_Uyen_bai_tap (main)
+$ git commit -m "File cau lenh"
+[main f7823a2] File cau lenh
+ 2 files changed, 414 insertions(+)
+ create mode 100644 caulenh.txt
+ create mode 100644 caulenh.txt.txt
+
+Meo Meo@DESKTOP-FTLG1B6 MINGW64 /d/24174600009_Tran_Thu_Uyen_bai_tap (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 3.11 KiB | 3.11 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uyen15/24174600009_Tran_Thu_Uyen_bai_tap.git
+   243dd9d..f7823a2  main -> main
+
+
